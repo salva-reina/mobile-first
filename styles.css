@@ -151,5 +151,132 @@ main{
     line-height: 1.6rem;
     color: #757575;
 }
+    
+    /* tabla */
+
+.main_table_container{
+    display: grid;
+    grid-template: 35px 159px 31px/197px 38px;
+    grid-template-areas:"titulo titulo"
+                        "contenido contenido"
+                        "fecha fecha" ;
+    margin-left:calc(50% - 101px);
+}
+
+.table_container{
+    justify-content: start;
+    align-items: center;
+}
+
+.table_container h3 {
+    grid-area:titulo;
+    align-self: center;
+    justify-self: start;
+    margin-left: 12px;
+    padding-bottom: 12px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: #FF9536
+}
+
+.grid_table_container{
+    grid-area: contenido;
+    display: grid;
+    grid-template: repeat(4,1fr) / 101px 95px;
+    border-radius: 10px;
+    overflow: hidden;
+    gap: 1px;
+}
+
+.grid_table_container div{
+    justify-content: start;
+    align-items: center;
+    padding-left: 12px;
+    background-color: var(--white-color);
+    padding: 10px 12px;
+    background-color: var(--just-white);
+}
+
+.grid_table_container div:nth-child(1) {
+	border-top-left-radius: 4px;
+}
+
+.grid_table_container div:nth-child(2) {
+	border-top-right-radius: 4px;
+}
+
+.grid_table_container div:nth-child(7) {
+	border-bottom-left-radius: 4px;
+}
+
+.grid_table_container div:nth-child(8) {
+	border-bottom-right-radius: 4px;
+}
+
+.grid_table_container div:nth-child(2n) {
+	justify-content: center;
+}
+
+.grid_table_container div h4 {
+    font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1.9rem;
+	color: var(--grey);
+}
+
+.grid_table_container div h5 {
+    font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 1.7rem;
+	color: var(--grey);
+}
+.grid_table_container div h5 span {
+    display: inline-block;
+	margin-left: 10.5px;
+	width: 12px;
+    height: 8px;
+    background-image:url(./bienes/logos/trending-up.svg);
+    background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    color:var(--bitcoin-orange);
+
+}
+
+.grid_table_container div:nth-child(6) h5 span {
+	display: inline-block;
+	margin-left: 10.5px;
+	width: 12px;
+	height: 8px;
+	background-image: url(./bienes/logos/trending-down.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: var(--bitcoin-orange);
+}
+
+.table-updateDate {
+    grid-area: fecha;
+    background-color: var(--soft-orange);
+	color: var(--warm-black);
+	padding: 0;
+	text-align: center;
+	margin-top: 16px;
+	border-radius: 8px;
+	width: 100%;
+	
+} 
+.table-updateDate p {
+	font-size: 1.2em;
+	font-weight: 400;
+	line-height: 1.45em;
+} 
+
+.table-updateDate span {
+	font-size: 1.2em;
+	font-weight: 700;
+	line-height: 1.45em;
+} 
 
 
