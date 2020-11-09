@@ -276,3 +276,56 @@ main {
   font-weight: 700;
   line-height: 1.45em;
 }
+
+.main_product_detail {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 20px 10px;
+  background-color: var(--warm-black);
+}
+
+.product_detail--batata-logo {
+  position: absolute;
+  width: 40px;
+  height: 25px;
+  background-image: url(./bienes/img/logo.svg);
+  top: calc(0% - 12.5px);
+  left: calc(50% - 18px);
+}
+
+.product_detail_title {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.product_detail_title h2 {
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--just-white);
+}
+
+.product_detail_title p {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
+}
+
+.product_cards--container {}
+
+.product_detail--card {}
+
+.card_images {}
+
+.product--card_title {}
+
+.product--card_body {}
