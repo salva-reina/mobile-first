@@ -320,12 +320,55 @@ main {
   color: #808080;
 }
 
-.product_cards--container {}
+.product_detail--card {
+  width: 90%;
+  min-width: 288px;
+  max-width: 400px;
+  height: 150px;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: var(--black);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
 
-.product_detail--card {}
+.product_detail--card .item {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-.card_images {}
+.product_detail--card .clock {
+  background-image: url(./bienes/logos/clock.svg);
+}
 
-.product--card_title {}
+.product_detail--card .eye {
+  background-image: url(./bienes/logos/eye.svg);
+}
 
-.product--card_body {}
+.product_detail--card .dolar {
+  background-image: url(./bienes/logos/dollar-sign.svg);
+}
+
+.product_detail--card .circle {
+  background-image: url(./bienes/logos/check-circle.svg);
+}
+
+.product--card_title {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--just-white);
+}
+
+.product--card_body {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
+}
